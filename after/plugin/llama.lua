@@ -1,3 +1,1 @@
-require('nvim-llama').setup {
-    debug = true
-}
+require("model.providers.llamacpp").setup({})
