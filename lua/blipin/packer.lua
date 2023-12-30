@@ -71,6 +71,4 @@ return require('packer').startup(function(use)
     }
 }
 
-    use 'jpmcb/nvim-llama';
-
 end)

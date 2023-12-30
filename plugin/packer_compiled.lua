@@ -141,11 +141,6 @@ _G.packer_plugins = {
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-llama"] = {
-    loaded = true,
-    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-llama",
-    url = "https://github.com/jpmcb/nvim-llama"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
