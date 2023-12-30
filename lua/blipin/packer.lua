@@ -68,7 +68,15 @@ return require('packer').startup(function(use)
                 -- refer to the configuration section below
             }
         end
-    }
+    };
+
+    use 'ThePrimeagen/vim-be-good';
+
+    use 'gsuuon/model.nvim';
+
+    use 'tpope/vim-commentary';
+
+    use "tpope/vim-surround";
 }
 
 end)

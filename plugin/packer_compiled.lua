@@ -136,6 +136,11 @@ _G.packer_plugins = {
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["model.nvim"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/model.nvim",
+    url = "https://github.com/gsuuon/model.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -186,6 +191,16 @@ _G.packer_plugins = {
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
   ["vim-easyclip"] = {
     loaded = true,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/vim-easyclip",
@@ -195,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["vim-vsnip"] = {
     loaded = true,
