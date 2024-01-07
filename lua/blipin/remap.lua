@@ -5,13 +5,11 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
-<<<<<<< HEAD
 vim.keymap.set("n", "<C-t>", "<cmd>silent !tmux neww ~/.dotfiles/tmux-sessionizer.sh<CR>")
 
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
-=======
 -- przeskakiwanie o page up/down z automatycznym wyśrodkowaniem kursora
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
@@ -21,7 +19,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- tmux sessionizer
 vim.keymap.set("n", "<C-t>", "<cmd>silent !tmux neww ~/.dotfiles/tmux-sessionizer.sh<CR>")
 
->>>>>>> 978b1c31ec7f5a70e861ab8ecf62f34aa09e0dde
 -- przesuwanie zaznaczonego tekstu
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

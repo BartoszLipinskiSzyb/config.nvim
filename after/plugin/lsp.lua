@@ -1,5 +1,16 @@
 local lsp_zero = require('lsp-zero')
 
+-- Change this to your actual download path.
+local path_to_download = '~/.config/nvim/omnisharp'
+require('lspconfig').omnisharp.setup {
+  cmd = {
+    'mono',
+    '--assembly-loader=strict',
+    path_to_download .. '/omnisharp/OmniSharp.exe',
+  },
+  use_mono = true,
+}
+
 lsp_zero.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 

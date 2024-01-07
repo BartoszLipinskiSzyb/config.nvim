@@ -77,6 +77,19 @@ return require('packer').startup(function(use)
     use 'tpope/vim-commentary';
 
     use "tpope/vim-surround";
+
+
+    -- use 'jose-elias-alvarez/null-ls.nvim';
+    -- use 'nvim-lualine/lualine.nvim';
+    -- use 'danymat/neogen';
+    -- use 'nvim-tree/nvim-tree.lua';
+    -- use 'akinsho/toggleterm.nvim';
+
+    -- use 'akinsho/bufferline.nvim';
+    -- use 'catppuccin/catppuccin';
+    -- use 'mfussenegger/nvim-dap';
+    -- use 'lewis6991/gitsigns.nvim';
+    -- use 'lukas-reineke/indent-blankline.nvim';
 }
 
 end)
