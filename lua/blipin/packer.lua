@@ -90,6 +90,17 @@ return require('packer').startup(function(use)
     -- use 'mfussenegger/nvim-dap';
     -- use 'lewis6991/gitsigns.nvim';
     -- use 'lukas-reineke/indent-blankline.nvim';
+    --
+
+    use "morhetz/gruvbox";
+
+    -- block declarations displayed on top
+    use "nvim-treesitter/nvim-treesitter-context";
+
+    use "MeanderingProgrammer/markdown.nvim";
+
+    use 'TamaMcGlinn/nvim-lspconfig-ada';
+    use 'TamaMcGlinn/nvim-lsp-gpr-selector';
 }
 
 end)

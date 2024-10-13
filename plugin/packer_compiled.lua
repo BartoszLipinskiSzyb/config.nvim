@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
   harpoon = {
     loaded = true,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -125,6 +130,11 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  ["markdown.nvim"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/markdown.nvim",
+    url = "https://github.com/MeanderingProgrammer/markdown.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -146,15 +156,30 @@ _G.packer_plugins = {
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-lsp-gpr-selector"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-lsp-gpr-selector",
+    url = "https://github.com/TamaMcGlinn/nvim-lsp-gpr-selector"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-lspconfig-ada"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig-ada",
+    url = "https://github.com/TamaMcGlinn/nvim-lspconfig-ada"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/blipin/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
   ["packer.nvim"] = {
     loaded = true,
