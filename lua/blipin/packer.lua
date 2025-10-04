@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
   requires = {
     --- Uncomment these if you want to manage LSP servers from neovim
     {'williamboman/mason.nvim'},
-    {'williamboman/mason-lspconfig.nvim'},
+    {'mason-org/mason-lspconfig.nvim'},
 
     -- LSP Support
     {'neovim/nvim-lspconfig'},
@@ -101,6 +101,13 @@ return require('packer').startup(function(use)
 
     use 'TamaMcGlinn/nvim-lspconfig-ada';
     use 'TamaMcGlinn/nvim-lsp-gpr-selector';
+
+
+    -- gdb integration
+    use 'sakhnik/nvim-gdb';
+
+    -- java lsp
+    use 'mfussenegger/nvim-jdtls'
 }
 
 end)

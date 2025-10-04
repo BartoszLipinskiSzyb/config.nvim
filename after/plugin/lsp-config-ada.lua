@@ -11,7 +11,7 @@ end
 local textedit = vim.api.nvim_create_augroup('textedit', {clear = true})
 vim.api.nvim_create_autocmd({"BufEnter", "BufNew"}, {
   group = "textedit",
-  pattern = {"*.adb"},
+  pattern = {"*.adb", "*.ads"},
   callback = function()
       adalsp()
       vim.cmd("set shiftwidth=3")
