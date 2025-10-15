@@ -2,14 +2,14 @@ local lsp_zero = require('lsp-zero')
 
 -- Change this to your actual download path.
 local path_to_download = '~/.config/nvim/omnisharp'
-require('lspconfig').omnisharp.setup {
-  cmd = {
-    'mono',
-    '--assembly-loader=strict',
-    path_to_download .. '/omnisharp/OmniSharp.exe',
-  },
-  use_mono = true,
-}
+-- require('lspconfig').omnisharp.setup {
+--   cmd = {
+--     'mono',
+--     '--assembly-loader=strict',
+--     path_to_download .. '/omnisharp/OmniSharp.exe',
+--   },
+--   use_mono = true,
+-- }
 
 lsp_zero.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
@@ -27,16 +27,16 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 
 require('mason').setup({})
-require('mason-lspconfig').setup({
-  ensure_installed = {'rust_analyzer'},
-  handlers = {
-    lsp_zero.default_setup,
-    lua_ls = function()
-      local lua_opts = lsp_zero.nvim_lua_ls()
-      require('lspconfig').lua_ls.setup(lua_opts)
-    end,
-  }
-})
+-- require('mason-lspconfig').setup({
+--   ensure_installed = {'rust_analyzer'},
+--   handlers = {
+--     lsp_zero.default_setup,
+--     lua_ls = function()
+--       local lua_opts = lsp_zero.nvim_lua_ls()
+--       require('lspconfig').lua_ls.setup(lua_opts)
+--     end,
+--   }
+-- })
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -70,16 +70,16 @@ cmp.setup({
 
 local rt = require("rust-tools")
 
-rt.setup({
-  server = {
-    on_attach = function(_, bufnr)
-      -- Hover actions
-      vim.keymap.set("n", "<leader>ha", rt.hover_actions.hover_actions, { buffer = bufnr })
-      -- Code action groups
-      vim.keymap.set("n", "<leader>ca", rt.code_action_group.code_action_group, { buffer = bufnr })
-    end,
-  },
-})
+-- rt.setup({
+--   server = {
+--     on_attach = function(_, bufnr)
+--       -- Hover actions
+--       vim.keymap.set("n", "<leader>ha", rt.hover_actions.hover_actions, { buffer = bufnr })
+--       -- Code action groups
+--       vim.keymap.set("n", "<leader>ca", rt.code_action_group.code_action_group, { buffer = bufnr })
+--     end,
+--   },
+-- })
 
 -- local jdlsp = require("jdlsp")
 -- jdlsp.setup({
